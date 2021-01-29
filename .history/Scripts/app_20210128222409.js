@@ -12,13 +12,13 @@
 function displayHome()
 {
 
-    let indexText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
-    let indexTextElement = document.getElementById("index-welcome");
-    indexTextElement.textContent= indexText;
+    let indexWelcomeText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
+    let indexWelcomeElement = document.getElementById("index-welcome");
+    indexWelcomeElement.textContent= indexWelcomeText;
 
-    indexText = "WEBD6201: Lab 1";
-    indexTextElement = document.getElementById("home-title");
-    indexTextElement.textContent= indexText;
+     indexWelcomeText = "WEBD6201: Lab 1";
+     indexWelcomeElement = document.getElementById("home-title");
+    indexWelcomeElement.textContent= indexWelcomeText;
       // let paragraphOneText = "This is a simple site to demonstrate DOM Manipulation for ICE 1";
         
         //Different ways to select a paragraph element "paragraph one"
@@ -37,7 +37,7 @@ function displayHome()
         //step 4. Add/insert the element
       //  mainContent.appendChild(newParagraph);
 
-       // newParagraph.className = "fs-6";
+        newParagraph.className = "fs-6";
 
         //////another way to add an element ///////
         //let paragraphThree =`<p class="fs-7 fw-bold">And this is the Third Paragraph</p>`;
@@ -69,17 +69,7 @@ function displayAbout()
 }
 function displayProjects()
 {
-    let projectsText = "Projects";
-    let projectsTextElement = document.getElementById("projects-title");
-    projectsTextElement.textContent= projectsText;
     
-    projectsText = "Below are some of our favorite projects!!";
-    projectsTextElement = document.getElementById("projects-p1");
-    projectsTextElement.textContent= projectsText;
-
-    projectsText = "1. Discord Bot - Ashok Sasitharan";
-    projectsTextElement = document.getElementById("projects-h3-1");
-    projectsTextElement.textContent= projectsText;
 }
 function displayServices()
 {

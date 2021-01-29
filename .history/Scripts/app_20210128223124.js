@@ -72,13 +72,9 @@ function displayProjects()
     let projectsText = "Projects";
     let projectsTextElement = document.getElementById("projects-title");
     projectsTextElement.textContent= projectsText;
-    
-    projectsText = "Below are some of our favorite projects!!";
-    projectsTextElement = document.getElementById("projects-p1");
-    projectsTextElement.textContent= projectsText;
 
-    projectsText = "1. Discord Bot - Ashok Sasitharan";
-    projectsTextElement = document.getElementById("projects-h3-1");
+     projectsText = "Below are some of our favorite projects!!";
+     projectsTextElement = document.getElementById("projects-p1");
     projectsTextElement.textContent= projectsText;
 }
 function displayServices()
