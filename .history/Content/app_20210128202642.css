@@ -5,26 +5,16 @@ body.bg-image{
     background-size: 100% 100%;
 
 }
-.gradientBg{
-    padding-left: 10px;
+
+.container{
     color: white;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 20px;
+    width: 70%;
     height: 100px;
     margin: 50px auto;
     background: linear-gradient(35deg,#160b52,#2f55d1,#3d68f5)
+  /*  background: linear-gradient(35deg,#160b52,#2f51be)*/
 }
-
-.container{
-   
-   
-
-}
-p{
-    color:white;
-    font-size: large;
-    text-shadow: 2px 2px #000000;
-}
-footer{
+h4.footerContent{
     color:white;
 }

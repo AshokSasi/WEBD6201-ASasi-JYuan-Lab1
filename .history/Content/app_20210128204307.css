@@ -5,25 +5,20 @@ body.bg-image{
     background-size: 100% 100%;
 
 }
-.gradientBg{
-    padding-left: 10px;
+.titleBg{
     color: white;
-    border-radius: 10px;
-    width: 100%;
+    border-radius: 300px;
+    width: 70%;
     height: 100px;
-    margin: 50px auto;
+    margin: 10px auto;
     background: linear-gradient(35deg,#160b52,#2f55d1,#3d68f5)
 }
-
-.container{
-   
-   
-
+.contactUsForm{
+   margin: 300px;
 }
-p{
-    color:white;
-    font-size: large;
-    text-shadow: 2px 2px #000000;
+.container{
+    
+  /*  background: linear-gradient(35deg,#160b52,#2f51be)*/
 }
 footer{
     color:white;
