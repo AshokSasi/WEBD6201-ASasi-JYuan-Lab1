@@ -1,13 +1,9 @@
 body.bg-image{
-    background-image : url('../images/bg-img.png');
+    background-image : url('../img/bg-img.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
 
-}
-body
-{
-    padding-bottom: 40px;
 }
 .gradientBg{
     padding-left: 10px;
@@ -23,8 +19,7 @@ body
 
 }
 h3{
-    color:white;
-    text-shadow: 2px 2px #000000;
+
 }
 
 p{
