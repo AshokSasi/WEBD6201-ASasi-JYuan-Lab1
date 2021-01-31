@@ -81,30 +81,9 @@ function displayProjects()
     projectsTextElement = document.getElementById("projects-h3-1");
     projectsTextElement.textContent= projectsText;
 
-    let projectsText4Element = document.getElementById("projects-h3-4");
-    projectsText4Element.innerHTML =
-    `<h3>1. Multi-Text Editor - Jacky Yuan</h3>
-    <p>One of my earlier applications that was made in visual basic. It is a relative simple project of creating an multi-page 
-      text editor. But I liked it since it was one of the first projects made that had a practical application.
-    </p>
-    <img src="./images/texteditor1.PNG" alt="sample document in the editor" width="1024px" height="600">`;
-
-
-    let projectsText5Element = document.getElementById("projects-h3-5");
-    projectsText5Element.innerHTML =
-    `<h3>2. Salon Webpage - Jacky Yuan</h3>
-    <p>An webpage for a salon built in ASP.Net. It is linked to a database allowing for features such as a simple login and 
-    registering as a new user or making an appointment.
-    </p>
-    <img src="./images/FPoBH.PNG" alt="homepage of Fresh Prince of Bel-Hair" width="1024px" height="600">`;
-
-    let projectsText6Element = document.getElementById("projects-h3-6");
-    projectsText6Element.innerHTML =
-    `<h3>2. Side Scrolling Shooter - Jacky Yuan</h3>
-    <p>An older side project was simple side scrolling shooter made in Flash while it was still being supported. Contained
-    a hit detection, controls, increasing difficulty, power ups and simple animations.
-    </p>
-    <img src="./images/flashgame.PNG" alt="Side scrolling shooter game" width="1024px" height="600">`;
+    projectsText = "1. Multi-Text Editor - Jacky Yuan";
+    projectsTextElement = document.getElementById("projects-h3-1");
+    projectsTextElement.textContent= projectsText;
 }
 function displayServices()
 {

@@ -100,7 +100,7 @@ function displayProjects()
 
     let projectsText6Element = document.getElementById("projects-h3-6");
     projectsText6Element.innerHTML =
-    `<h3>2. Side Scrolling Shooter - Jacky Yuan</h3>
+    `<h3>2. Side scrolling shooter - Jacky Yuan</h3>
     <p>An older side project was simple side scrolling shooter made in Flash while it was still being supported. Contained
     a hit detection, controls, increasing difficulty, power ups and simple animations.
     </p>
