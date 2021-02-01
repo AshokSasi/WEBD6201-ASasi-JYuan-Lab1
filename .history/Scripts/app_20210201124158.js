@@ -67,11 +67,6 @@ function displayAbout()
 {
     let projectsTextElement = document.getElementById("about-title");
     projectsTextElement.innerHTML= `<h1>About Us</h1>`;
-
-    //About Ashok Sasitharan
-    projectsTextElement = document.getElementById("about-ashok");
-    projectsTextElement.innerHTML= `<h3>Ashok Sasitharan</h3>
-    <p>My name is Ashok Sasitharan, I am 19 years old and I have been programming for 4 years.</p>`;
 }
 function displayProjects()
 {

@@ -65,42 +65,23 @@ function displayHome()
 }
 function displayAbout()
 {
-    let projectsTextElement = document.getElementById("about-title");
-    projectsTextElement.innerHTML= `<h1>About Us</h1>`;
-
-    //About Ashok Sasitharan
-    projectsTextElement = document.getElementById("about-ashok");
-    projectsTextElement.innerHTML= `<h3>Ashok Sasitharan</h3>
-    <p>My name is Ashok Sasitharan, I am 19 years old and I have been programming for 4 years.</p>`;
+    
 }
 function displayProjects()
 {
-   
+   // let projectsText = "Projects";
     let projectsTextElement = document.getElementById("projects-title");
     projectsTextElement.innerHTML= `<h1>Projects</h1>`;
-
+    
+    //projectsText = "Below are some of our favorite projects!!";
     projectsTextElement = document.getElementById("projects-p1");
     projectsTextElement.innerHTML= `<p>Below are some of our favorite projects!!</p>`;
 
- //Discord Bot
+  //  projectsText = "1. Discord Bot - Ashok Sasitharan";
     projectsTextElement = document.getElementById("projects-h3-1");
     projectsTextElement.innerHTML= `<h3>1. Discord Bot - Ashok Sasitharan</h3>
     <p>One of my recent favorite projects was the creation of a simple discord bot that I made using Node.js</p>
     <img src="./images/discord-bot.PNG" alt="A picture of the discord bot replying to commands">`;
-
-    //Web App
-    projectsTextElement = document.getElementById("projects-h3-2");
-    projectsTextElement.innerHTML= `<h3>2. Database Web App - Ashok Sasitharan</h3>
-    <p>Another one of my favorite projects was the creation of a web app in ASP.NET which stored the data of
-    doctors and patients in a database and used that information to create appointments.</p>
-    <img src="./images/heart-hospital.PNG" alt="A picture of the hospital web app" width="1024px" height="500">`;
-
-    //cobol project
-    projectsTextElement = document.getElementById("projects-h3-3");
-    projectsTextElement.innerHTML= `<h3>3. COBOL Project - Ashok Sasitharan</h3>
-    <p>My third favorite project was a simple COBOL program that took item input data from a .dat file and created a formatted 
-    output file with calculations done for totals.</p>
-    <img src="./images/cobol-output.PNG" alt="A picture of the input file and formatted output file" width="1024px" height="600">`;
 
     let projectsText4Element = document.getElementById("projects-h3-4");
     projectsText4Element.innerHTML =
