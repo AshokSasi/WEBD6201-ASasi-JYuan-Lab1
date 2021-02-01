@@ -72,7 +72,7 @@ function displayAbout()
     projectsTextElement = document.getElementById("about-ashok");
     projectsTextElement.innerHTML= `<h3>Ashok Sasitharan</h3>
     <p>My name is Ashok Sasitharan, I am 19 years old and I have been programming for 4 years.</p>
-    <img src="./images/ashok-picture.jpg" alt="A picture of Ashok Sasitharan" width =450 height = 600>`;
+    <img src="./images/ashok-picture.jpg" alt="A picture of Ashok Sasitharan" width =600 height = 700>`;
 }
 function displayProjects()
 {
