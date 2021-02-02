@@ -144,14 +144,14 @@ function displayServices()
     projectsTextElement.innerHTML= `<h3>Web Development - Ashok Sasitharan</h3>
     <p>One of my strongest skills is creating good looking modern websites that are able to communicate with database using HTML, SQL, PHP, CSS, and JavaScript</p>
     <img src="./images/files.png" alt="A picture of web development icons">
-    <p>Author: Alex Anistratov, Title: Files html, css, php, js, <a href="https://www.talkaboutcreative.com.au/cms-html-css-php-js-wtf-know-language-user-love/"> Link</a> </p>`;
+    <p>Author: Alex Anistratov, Title: Files html, css, php, js, <a href="https://www.talkaboutcreative.com.au/cms-html-css-php-js-wtf-know-language-user-love/">Link</a> </p>`;
 
         //Ashok Sasitharan- OOP
         projectsTextElement = document.getElementById("services-h3-2");
         projectsTextElement.innerHTML= `<h3>Web Development - Ashok Sasitharan</h3>
         <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
         <img src="./images/oop-icon.png" alt="A OOP Icon. ">
-        <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
+        <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/">Link</a> </p>`;
 }
 
 function displayContact()
