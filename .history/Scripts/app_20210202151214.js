@@ -78,7 +78,7 @@ function displayAbout()
     //About Jacky Yuan
     projectsTextElement = document.getElementById("about-jacky");
     projectsTextElement.innerHTML= `<h3>Jacky Yuan</h3>
-    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMy name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
+    <p>&nbsp&nbsp&nbsp&nbspMy name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
     computers and how using nothing but numbers and words, we can create all kinds of interesting programs and apps. I started off with creating
     simple games in flash similar to the ones I played online. However, I became more interested in doing more complex programs with more functionality.
     I now have experience with a number of languages such as Java and c# alongside with some experience working on web development, mainframe development
