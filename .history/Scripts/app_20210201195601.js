@@ -78,7 +78,7 @@ function displayAbout()
     projectsTextElement = document.getElementById("about-jacky");
     projectsTextElement.innerHTML= `<h3>Jacky Yuan</h3>
     <p>My name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since high school.</p>
-    <img src="./images/jacky-picture.jpg" alt="A picture of Jacky Yuan" width =500 height = 450>`;
+    <img src="./images/jacky-picture.jpg" alt="A picture of Jacky Yuan" width =500 height = 500>`;
 }
 function displayProjects()
 {
