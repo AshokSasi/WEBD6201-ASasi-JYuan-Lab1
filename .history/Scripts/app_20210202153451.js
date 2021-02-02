@@ -11,7 +11,7 @@
 {
 function displayHome()
 {
-    
+
     let indexText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
     let indexTextElement = document.getElementById("index-welcome");
     indexTextElement.textContent= indexText;
@@ -20,6 +20,7 @@ function displayHome()
     indexTextElement = document.getElementById("home-title");
     indexTextElement.textContent= indexText;
 
+    
 }
 function displayAbout()
 {
@@ -159,23 +160,18 @@ function displayContact()
         }
 
     });
-
-
 }
+
 function NavbarInsert()
 {
     let navbarHR = document.getElementById("humanResources");
-    let parentDiv = sp2.parentNode
-
-    // Insert the new element into before sp2
-    parentDiv.insertBefore(sp1, sp2)
-    navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-users"></i>Human Resources</a>`
+    navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-brain fa-lg"></i>Human Resources</a>`
 }
-
 
     function Start()
     {
         console.log("App Started...");
+
         switch(document.title)
         {
             case "Home":

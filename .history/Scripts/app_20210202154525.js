@@ -165,10 +165,6 @@ function displayContact()
 function NavbarInsert()
 {
     let navbarHR = document.getElementById("humanResources");
-    let parentDiv = sp2.parentNode
-
-    // Insert the new element into before sp2
-    parentDiv.insertBefore(sp1, sp2)
     navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-users"></i>Human Resources</a>`
 }
 

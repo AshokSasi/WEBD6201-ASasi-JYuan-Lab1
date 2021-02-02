@@ -11,7 +11,7 @@
 {
 function displayHome()
 {
-    
+
     let indexText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
     let indexTextElement = document.getElementById("index-welcome");
     indexTextElement.textContent= indexText;
@@ -20,6 +20,7 @@ function displayHome()
     indexTextElement = document.getElementById("home-title");
     indexTextElement.textContent= indexText;
 
+    
 }
 function displayAbout()
 {
@@ -36,7 +37,7 @@ function displayAbout()
     //About Jacky Yuan
     projectsTextElement = document.getElementById("about-jacky");
     projectsTextElement.innerHTML= `<h3>Jacky Yuan</h3>
-    <p>My name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMy name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
     computers and how using nothing but numbers and words, we can create all kinds of interesting programs and apps. I started off with creating
     simple games in flash similar to the ones I played online. However, I became more interested in doing more complex programs with more functionality.
     I now have experience with a number of languages such as Java and c# alongside with some experience working on web development, mainframe development
@@ -159,23 +160,13 @@ function displayContact()
         }
 
     });
-
-
-}
-function NavbarInsert()
-{
-    let navbarHR = document.getElementById("humanResources");
-    let parentDiv = sp2.parentNode
-
-    // Insert the new element into before sp2
-    parentDiv.insertBefore(sp1, sp2)
-    navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-users"></i>Human Resources</a>`
 }
 
 
     function Start()
     {
         console.log("App Started...");
+
         switch(document.title)
         {
             case "Home":

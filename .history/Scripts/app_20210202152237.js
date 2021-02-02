@@ -11,7 +11,7 @@
 {
 function displayHome()
 {
-    
+
     let indexText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
     let indexTextElement = document.getElementById("index-welcome");
     indexTextElement.textContent= indexText;
@@ -20,6 +20,7 @@ function displayHome()
     indexTextElement = document.getElementById("home-title");
     indexTextElement.textContent= indexText;
 
+    
 }
 function displayAbout()
 {
@@ -36,7 +37,7 @@ function displayAbout()
     //About Jacky Yuan
     projectsTextElement = document.getElementById("about-jacky");
     projectsTextElement.innerHTML= `<h3>Jacky Yuan</h3>
-    <p>My name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
+    <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMy name is Jacky Yuan, I'm 25 years old and I have been working with computer programming since I was in high school. I have always been fascinated by
     computers and how using nothing but numbers and words, we can create all kinds of interesting programs and apps. I started off with creating
     simple games in flash similar to the ones I played online. However, I became more interested in doing more complex programs with more functionality.
     I now have experience with a number of languages such as Java and c# alongside with some experience working on web development, mainframe development
@@ -77,9 +78,7 @@ function displayProjects()
     projectsText4Element.innerHTML =
     `<h3>1. Multi-Text Editor - Jacky Yuan</h3>
     <p>One of my earlier applications that was made in visual basic. It is a relative simple project of creating an multi-page 
-      text editor. But I liked it since it was one of the first projects I made that have a practical application. Before this point,
-      projects were always these abstract console applications with very specialized purposes. This project, however, was memorable since
-      it was making something, even if it is a simplified version, that I often used.
+      text editor. But I liked it since it was one of the first projects made that had a practical application.
     </p>
     <img src="./images/texteditor1.PNG" alt="sample document in the editor" width="1024px" height="600">`;
 
@@ -87,10 +86,8 @@ function displayProjects()
     let projectsText5Element = document.getElementById("projects-h3-5");
     projectsText5Element.innerHTML =
     `<h3>2. Salon Webpage - Jacky Yuan</h3>
-    <p>An simple 5 page website for a salon built in ASP.Net. It is linked to a database allowing for features such as a simple login and 
-    registering as a new user or making an appointment. This was a final project for NETD 3202 class, it combined elements of
-    other web design with various functionalities programmed in C#. The resulting website looked much more professional than I had initially
-    thought it would.
+    <p>An webpage for a salon built in ASP.Net. It is linked to a database allowing for features such as a simple login and 
+    registering as a new user or making an appointment.
     </p>
     <img src="./images/FPoBH.PNG" alt="homepage of Fresh Prince of Bel-Hair" width="1024px" height="600">`;
 
@@ -159,23 +156,13 @@ function displayContact()
         }
 
     });
-
-
-}
-function NavbarInsert()
-{
-    let navbarHR = document.getElementById("humanResources");
-    let parentDiv = sp2.parentNode
-
-    // Insert the new element into before sp2
-    parentDiv.insertBefore(sp1, sp2)
-    navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-users"></i>Human Resources</a>`
 }
 
 
     function Start()
     {
         console.log("App Started...");
+
         switch(document.title)
         {
             case "Home":
