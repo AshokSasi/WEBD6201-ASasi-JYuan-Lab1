@@ -265,11 +265,12 @@ function displayContact()
         
 
     let sendButton = document.getElementById("sendButton");
-    sendButton.addEventListener("click", function(event) {
+    sendButton.addEventListener("click", function()
+    {
 
-        event.preventDefault();
+
         window.location.href = "index.html";
-       
+        //event.preventDefault();
         // let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
         
         // if(contact.serialize())
