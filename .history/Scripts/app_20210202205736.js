@@ -54,21 +54,17 @@ function displayFooter()
     //Footer 
     //let navbarAboutElement = document.getElementById("nav-about");
     let footerElement = document.createElement("nav");
-    footerElement.setAttribute("class", "navbar fixed-bottom navbar-dark bg-dark");
-    footerElement.innerHTML=`<div class="container-fluid">
-    <h4 class="footerContent"><i class="far fa-copyright"></i> Copyright 2021</h4>
-  </div>`;
-    let footerContent = document.getElementsByTagName("footer")[0]; 
-    footerContent.appendChild(footerElement);
-    
+    humanResourcesLi.setAttribute("class", "navbar fixed-bottom navbar-dark bg-dark");
+    let mainContent = document.getElementById("nav-list"); 
+    mainContent.appendChild(humanResourcesLi);
 
-    // let hrContent = document.createElement("h1");
-    // hrContent.setAttribute("id", "hr-title");
-    // let mainContent = document.getElementsByTagName("main")[0]; 
-    // mainContent.appendChild(hrContent);
-    // hrContent.textContent= "Human Resources";
-    // hrContent.className = "gradientBg";
-    
+    <footer>
+     <nav class="navbar fixed-bottom navbar-dark bg-dark">
+         <div class="container-fluid">
+           <h4 class="footerContent"><i class="far fa-copyright"></i> Copyright 2021</h4>
+         </div>
+       </nav>
+ </footer>
 }
 
 function displayHome()
@@ -241,7 +237,6 @@ function displayContact()
     {
         console.log("App Started...");
         displayNavbar();
-        
         switch(document.title)
         {
            
@@ -267,7 +262,7 @@ function displayContact()
 
 
         }
-        displayFooter();
+        
     }
 
     

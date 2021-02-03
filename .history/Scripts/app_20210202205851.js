@@ -55,19 +55,11 @@ function displayFooter()
     //let navbarAboutElement = document.getElementById("nav-about");
     let footerElement = document.createElement("nav");
     footerElement.setAttribute("class", "navbar fixed-bottom navbar-dark bg-dark");
+    let footerContent = document.getElementById("footer"); 
+    footerContent.appendChild(footerElement);
     footerElement.innerHTML=`<div class="container-fluid">
     <h4 class="footerContent"><i class="far fa-copyright"></i> Copyright 2021</h4>
   </div>`;
-    let footerContent = document.getElementsByTagName("footer")[0]; 
-    footerContent.appendChild(footerElement);
-    
-
-    // let hrContent = document.createElement("h1");
-    // hrContent.setAttribute("id", "hr-title");
-    // let mainContent = document.getElementsByTagName("main")[0]; 
-    // mainContent.appendChild(hrContent);
-    // hrContent.textContent= "Human Resources";
-    // hrContent.className = "gradientBg";
     
 }
 
@@ -241,7 +233,6 @@ function displayContact()
     {
         console.log("App Started...");
         displayNavbar();
-        
         switch(document.title)
         {
            
@@ -267,7 +258,7 @@ function displayContact()
 
 
         }
-        displayFooter();
+        
     }
 
     

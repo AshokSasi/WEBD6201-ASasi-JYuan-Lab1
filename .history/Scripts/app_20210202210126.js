@@ -58,16 +58,9 @@ function displayFooter()
     footerElement.innerHTML=`<div class="container-fluid">
     <h4 class="footerContent"><i class="far fa-copyright"></i> Copyright 2021</h4>
   </div>`;
-    let footerContent = document.getElementsByTagName("footer")[0]; 
+    let footerContent = document.getElementsByTagName("footer"); 
     footerContent.appendChild(footerElement);
     
-
-    // let hrContent = document.createElement("h1");
-    // hrContent.setAttribute("id", "hr-title");
-    // let mainContent = document.getElementsByTagName("main")[0]; 
-    // mainContent.appendChild(hrContent);
-    // hrContent.textContent= "Human Resources";
-    // hrContent.className = "gradientBg";
     
 }
 
