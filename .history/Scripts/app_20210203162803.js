@@ -72,7 +72,9 @@ File: app.js
 
     let comicElement = document.getElementById("comic");
     comicElement.innerHTML = `<img src="./images/comic.jpeg" alt="programmer comic" width="500" class="center">
-    <p class="textcenter">Author: Mart Virkus, Title: How to Build a Horse with Programming, <a href="https://imgur.com/gallery/60QYd"> Link</a> </p>`;
+    <div  class="center">
+    <p>Author: toggl Goon Squad, Title: How to Build a Horse with Programming, <a href="https://imgur.com/gallery/60QYd"> Link</a> </p>
+    </div>`;
     
   }
 

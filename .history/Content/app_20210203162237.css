@@ -23,15 +23,12 @@ body
     margin: 50px auto;
     background: linear-gradient(35deg,#160b52,#2f55d1,#3d68f5)
 }
-.textcenter{
-
-   text-align:center;
-}
 
 .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    width: 50%;
   }
 
 .container{
