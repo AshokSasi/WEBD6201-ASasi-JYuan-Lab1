@@ -27,30 +27,20 @@ function displayNavbar()
         navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
+
     //Human Resources Link
     let navbarAboutElement = document.getElementById("nav-about");
     let humanResourcesLi = document.createElement("li");
     humanResourcesLi.setAttribute("id", "nav-human-resources");
     let mainContent = document.getElementById("nav-list"); 
     mainContent.appendChild(humanResourcesLi);
-    
-    
-    if (document.title === "HR")
-    {
-        
-        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
-    }
-    else
-    {
-        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
-    }
+    humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="about.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
     navbarAboutElement.after(humanResourcesLi);
 }    
 
 function displayHome()
 {
-    
+    displayNavbar();
     let indexText = "Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan";
     let indexTextElement = document.getElementById("index-welcome");
     indexTextElement.textContent= indexText;
@@ -63,6 +53,7 @@ function displayHome()
 }
 function displayAbout()
 {
+    displayNavbar();
     let projectsTextElement = document.getElementById("about-title");
     projectsTextElement.innerHTML= `<h1>About Us</h1>`;
 
@@ -86,7 +77,7 @@ function displayAbout()
 }
 function displayProjects()
 {
-   
+    displayNavbar();
     let projectsTextElement = document.getElementById("projects-title");
     projectsTextElement.innerHTML= `<h1>Projects</h1>`;
 
@@ -146,6 +137,7 @@ function displayProjects()
 }
 function displayServices()
 {
+    displayNavbar();
     let projectsTextElement = document.getElementById("services-title");
     projectsTextElement.innerHTML= `<h1>Services</h1>`;
 
@@ -164,18 +156,9 @@ function displayServices()
         <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
 }
 
-function displayHR()
-{
-    let hrContent = document.createElement("h1");
-    hrContent.setAttribute("id", "hr-title");
-    let mainContent = document.getElementsByTagName("main")[0]; 
-    mainContent.appendChild(hrContent);
-    hrContent.textContent= "Human Resources";
-    hrContent.className = "gradientBg";
-}
-
 function displayContact()
 {
+    displayNavbar();
     let messageArea = document.getElementById("messageArea");
     messageArea.hidden = true;
     //form validation
@@ -213,7 +196,6 @@ function displayContact()
 
 }
 
-
     function Start()
     {
         console.log("App Started...");
@@ -235,9 +217,6 @@ function displayContact()
                 break;
             case "Contact":
                 displayContact();
-                break;
-            case "HR":
-                displayHR();
                 break;
 
 

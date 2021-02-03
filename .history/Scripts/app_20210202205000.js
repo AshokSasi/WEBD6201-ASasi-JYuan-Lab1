@@ -39,11 +39,11 @@ function displayNavbar()
     if (document.title === "HR")
     {
         
-        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
+        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-user-tie"></i> Human Resources</a>`;
     }
     else
     {
-        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
+        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-user-tie"></i> Human Resources</a>`;
     }
     navbarAboutElement.after(humanResourcesLi);
 }    

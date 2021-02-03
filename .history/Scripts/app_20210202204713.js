@@ -34,16 +34,17 @@ function displayNavbar()
     humanResourcesLi.setAttribute("id", "nav-human-resources");
     let mainContent = document.getElementById("nav-list"); 
     mainContent.appendChild(humanResourcesLi);
+    humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
     
     
     if (document.title === "HR")
     {
         
-        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
+        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
     }
     else
     {
-        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
+        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
     }
     navbarAboutElement.after(humanResourcesLi);
 }    

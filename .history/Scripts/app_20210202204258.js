@@ -27,24 +27,14 @@ function displayNavbar()
         navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
+
     //Human Resources Link
     let navbarAboutElement = document.getElementById("nav-about");
     let humanResourcesLi = document.createElement("li");
     humanResourcesLi.setAttribute("id", "nav-human-resources");
     let mainContent = document.getElementById("nav-list"); 
     mainContent.appendChild(humanResourcesLi);
-    
-    
-    if (document.title === "HR")
-    {
-        
-        humanResourcesLi.innerHTML=`<a class="nav-link active" aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
-    }
-    else
-    {
-        humanResourcesLi.innerHTML=`<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-user-tie fa-lg"></i> Human Resources</a>`;
-    }
+    humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="human-resources.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
     navbarAboutElement.after(humanResourcesLi);
 }    
 
@@ -168,7 +158,7 @@ function displayHR()
 {
     let hrContent = document.createElement("h1");
     hrContent.setAttribute("id", "hr-title");
-    let mainContent = document.getElementsByTagName("main")[0]; 
+    let mainContent = document.getElementByTagName("main")[0]; 
     mainContent.appendChild(hrContent);
     hrContent.textContent= "Human Resources";
     hrContent.className = "gradientBg";
