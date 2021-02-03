@@ -192,15 +192,12 @@ function displayServices()
         <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
         <img src="./images/oop-icon.png" alt="A OOP Icon. ">
         <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
-        
-        //Ashok Sasitharan- Web Applications
-         projectsTextElement = document.getElementById("services-h3-3");
-         projectsTextElement.innerHTML= `<h3>Web Applications - Ashok Sasitharan</h3>
-         <p>Finally another one of my strengths is that I am experienced in creating Web Applications using ASP.NET Core that work with databases 
-         as well as deploying web apps with Azure.
-         </p>
-         <img src="./images/net-core.png" alt=".NET Core logo." width="200" height="200">
-         <p>Author: Wikimedia Commons, Title: NET Core Logo, <a href="https://commons.wikimedia.org/wiki/File:.NET_Core_Logo.svg"> Link</a> </p>`;
+         //Ashok Sasitharan- OOP
+         projectsTextElement = document.getElementById("services-h3-2");
+           projectsTextElement.innerHTML= `<h3>Object Oriented Programming - Ashok Sasitharan</h3>
+           <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
+           <img src="./images/oop-icon.png" alt="A OOP Icon. ">
+           <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
         
          //Jacky Yuan -
          projectsTextElement = document.getElementById("services-h3-4");

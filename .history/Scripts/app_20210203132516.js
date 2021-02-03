@@ -199,7 +199,7 @@ function displayServices()
          <p>Finally another one of my strengths is that I am experienced in creating Web Applications using ASP.NET Core that work with databases 
          as well as deploying web apps with Azure.
          </p>
-         <img src="./images/net-core.png" alt=".NET Core logo." width="200" height="200">
+         <img src="./images/net-core.png" alt=".NET Core logo." width="500" height="500">
          <p>Author: Wikimedia Commons, Title: NET Core Logo, <a href="https://commons.wikimedia.org/wiki/File:.NET_Core_Logo.svg"> Link</a> </p>`;
         
          //Jacky Yuan -
