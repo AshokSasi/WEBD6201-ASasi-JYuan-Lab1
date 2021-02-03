@@ -199,7 +199,7 @@ function displayServices()
          <p>One of my strengths is that I am proficient working with databases. I am experience with utilizing SQL to implement and 
          interface with a database in my projects. I am also comfortable with database design to eliminate redundancies and provide
          concise data.</p>
-         <img src="./images/sql-database.jpg" alt="SQL database. " width="700px" height="300">
+         <img src="./images/sql-database.jpg" alt="SQL database. " width="1024px" height="600">
          <p>Author: Eleni Markou - blendo.co, Title: SQL database, <a href="https://www.blendo.co/blog/sql-table-and-data-partitioning-how-to/"> Link</a> </p>`;
            
          //Jacky Yuan - System development life cycle

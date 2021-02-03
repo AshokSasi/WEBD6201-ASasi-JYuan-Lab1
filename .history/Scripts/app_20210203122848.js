@@ -188,35 +188,24 @@ function displayServices()
 
         //Ashok Sasitharan- OOP
         projectsTextElement = document.getElementById("services-h3-2");
-        projectsTextElement.innerHTML= `<h3>Object Oriented Programming - Ashok Sasitharan</h3>
+        projectsTextElement.innerHTML= `<h3>Web Development - Ashok Sasitharan</h3>
         <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
         <img src="./images/oop-icon.png" alt="A OOP Icon. ">
         <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
         
-         //Jacky Yuan -
-         projectsTextElement = document.getElementById("services-h3-4");
-         projectsTextElement.innerHTML= `<h3>Database Skills - Jacky Yuan</h3>
-         <p>One of my strengths is that I am proficient working with databases. I am experience with utilizing SQL to implement and 
-         interface with a database in my projects. I am also comfortable with database design to eliminate redundancies and provide
-         concise data.</p>
-         <img src="./images/sql-database.jpg" alt="SQL database. " width="700px" height="300">
-         <p>Author: Eleni Markou - blendo.co, Title: SQL database, <a href="https://www.blendo.co/blog/sql-table-and-data-partitioning-how-to/"> Link</a> </p>`;
-           
-         //Jacky Yuan - System development life cycle
-        projectsTextElement = document.getElementById("services-h3-5");
-        projectsTextElement.innerHTML= `<h3>System Development Life Cycle - Jacky Yuan</h3>
-        <p>Another one of my strengths is that I am experienced with applying the SDLC concepts and models into
-        many of my projects. In particular, waterfall, prototyping, and SCRUM methodologies have all been utilized throughout my various projects.</p>
-        <img src="./images/SDLC.png" alt="SDLC cycle. ">
-        <p>Author: javatpoint.com, Title: SDLC cycle, <a href="https://www.javatpoint.com/software-engineering-software-development-life-cycle"> Link</a> </p>`;
-
-        //Jacky Yuan - Mainframe Development
-         projectsTextElement = document.getElementById("services-h3-6");
-         projectsTextElement.innerHTML= `<h3>Mainframe Development - Jacky Yuan</h3>
-         <p>Lastly, alongside many of the more common programming languages like python or c#, I also have experience with so older languages
-         like cobol which is still used in many mainframe systems across the world.</p>
-         <img src="./images/60cobol.jpg" alt="A cobol Icon. ">
-         <p>Author: Que mangus - blog.microfocus.com, Title: cobol Icon, <a href="https://blog.microfocus.com/cobol-is-60/"> Link</a> </p>`;
+         //Ashok Sasitharan- OOP
+         projectsTextElement = document.getElementById("services-h3-2");
+         projectsTextElement.innerHTML= `<h3>Web Development - Ashok Sasitharan</h3>
+         <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
+         <img src="./images/oop-icon.png" alt="A OOP Icon. ">
+         <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
+         
+          //Ashok Sasitharan- OOP
+        projectsTextElement = document.getElementById("services-h3-2");
+        projectsTextElement.innerHTML= `<h3>Web Development - Ashok Sasitharan</h3>
+        <p>Another one of my strengths is that I am proficient in creating Object Oriented Programs using C++, C#, and Java</p>
+        <img src="./images/oop-icon.png" alt="A OOP Icon. ">
+        <p>Author: codestation.io, Title: OOP Icon, <a href="https://in.pinterest.com/pin/727823989749361379/"> Link</a> </p>`;
 }
 
 function displayHR()
