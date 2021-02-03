@@ -35,7 +35,7 @@ function displayNavbar()
     let mainContent = document.getElementById("nav-list"); 
     mainContent.appendChild(humanResourcesLi);
     humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="about.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
-    navbarAboutElement.after(humanResourcesLi);
+    humanResourcesLi.after(navbarAboutElement);
 }    
 
 function displayHome()

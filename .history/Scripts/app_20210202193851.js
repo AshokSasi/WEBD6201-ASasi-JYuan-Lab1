@@ -27,15 +27,8 @@ function displayNavbar()
         navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-
-    //Human Resources Link
-    let navbarAboutElement = document.getElementById("nav-about");
-    let humanResourcesLi = document.createElement("li");
-    humanResourcesLi.setAttribute("id", "nav-human-resources");
-    let mainContent = document.getElementById("nav-list"); 
-    mainContent.appendChild(humanResourcesLi);
-    humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="about.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
-    navbarAboutElement.after(humanResourcesLi);
+    
+    
 }    
 
 function displayHome()

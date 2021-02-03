@@ -28,14 +28,18 @@ function displayNavbar()
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
 
-    //Human Resources Link
     let navbarAboutElement = document.getElementById("nav-about");
     let humanResourcesLi = document.createElement("li");
     humanResourcesLi.setAttribute("id", "nav-human-resources");
-    let mainContent = document.getElementById("nav-list"); 
-    mainContent.appendChild(humanResourcesLi);
-    humanResourcesLi.innerHTML= `<a class="nav-link " aria-current="page" href="about.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>`;
-    navbarAboutElement.after(humanResourcesLi);
+    let mainContent = document.getElementsByTagName("nav")[0];
+        // Step4: Add/Insert the element
+        mainContent.appendChild(humanResourcesLi);
+        humanResourcesLi.className = "nav-link";
+    humanResourcesLi.innerHTML= `<li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="about.html"><i class="fas fa-brain fa-lg"></i> Human Resources</a>
+  </li>`;
+
+    humanResourcesLi.after(navbarAboutElement);
 }    
 
 function displayHome()
