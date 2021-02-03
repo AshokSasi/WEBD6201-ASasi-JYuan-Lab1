@@ -56,7 +56,7 @@ footer{
     animation-iteration-count: infinite;
 
   }
-  .heart:after {
+  .heart:after:hover {
     background-color: pink;
     content: "";
     border-radius: 50%;

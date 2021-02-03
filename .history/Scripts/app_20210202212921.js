@@ -75,7 +75,7 @@ function displayHome()
 {
     
     let indexText = `<p>Welcome to Lab 1 by Ashok Sasitharan & Jacky Yuan. Here we have pages that
-     showcase our programming prowess with info about our previous projects as well as some information about ourselves.</p>`;
+     showcase our programming prowess with info about our previous projects as well as some information about ourselves.</p> `;
     let indexTextElement = document.getElementById("index-welcome");
     indexTextElement.innerHTML= indexText;
 
