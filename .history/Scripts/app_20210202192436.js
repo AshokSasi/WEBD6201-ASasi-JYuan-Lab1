@@ -27,7 +27,12 @@ function displayNavbar()
         navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
+  
+    let aboutUsElement = document.getElementById("nav-about");
+    let humanResources = ` <li id=nav-contact class="nav-item">
+    <a class="nav-link" aria-current="page" href="contact.html"><i class="fas fa-phone fa-lg"></i> Human Resources</a>
+  </li>`
+  humanResources.after(aboutUsElement);
 
     
 }    

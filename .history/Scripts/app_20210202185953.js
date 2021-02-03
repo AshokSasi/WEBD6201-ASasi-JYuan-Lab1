@@ -15,20 +15,39 @@ function displayNavbar()
     //Set the nav bar to link to projects.html instead of products.html
     let navbarProductsElement = document.getElementById("nav-products");
     
-    
+
     if (document.title === "Projects")
     {
-        
         navbarProductsElement.innerHTML=`<a class="nav-link active" aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
     else
     {
-        navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
+        navbarProductsElement.innerHTML=`<a class="nav-link" aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
+    switch(document.title)
+    {
+       
+        case "Home":
+            displayHome();
+            break;
+        case "About":
+            displayAbout();
+            break;
+        case "Projects":
+            displayProjects();
+            break;
+        case "Services":
+            displayServices();
+            break;
+        case "Contact":
+            displayContact();
+            break;
 
+
+
+    }
     
 }    
 

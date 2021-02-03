@@ -15,20 +15,18 @@ function displayNavbar()
     //Set the nav bar to link to projects.html instead of products.html
     let navbarProductsElement = document.getElementById("nav-products");
     
-    
+
     if (document.title === "Projects")
     {
-        
         navbarProductsElement.innerHTML=`<a class="nav-link active" aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
     else
     {
-        navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
+        navbarProductsElement.innerHTML=`<a class="nav-link" aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
-
+   
     
 }    
 
@@ -195,7 +193,7 @@ function displayContact()
     function Start()
     {
         console.log("App Started...");
-        displayNavbar();
+     
         switch(document.title)
         {
            
@@ -222,7 +220,7 @@ function displayContact()
     }
 
     
-
+    window.addEventListener("load", displayNavbar);
     window.addEventListener("load", Start);
 
 })();

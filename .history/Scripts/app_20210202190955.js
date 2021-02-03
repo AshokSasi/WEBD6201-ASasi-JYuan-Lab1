@@ -15,10 +15,9 @@ function displayNavbar()
     //Set the nav bar to link to projects.html instead of products.html
     let navbarProductsElement = document.getElementById("nav-products");
     
-    
+
     if (document.title === "Projects")
     {
-        
         navbarProductsElement.innerHTML=`<a class="nav-link active" aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
@@ -27,8 +26,7 @@ function displayNavbar()
         navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
         <i class="fas fa-box fa-lg"></i> Projects</a>`;
     }
-    
-
+  
     
 }    
 

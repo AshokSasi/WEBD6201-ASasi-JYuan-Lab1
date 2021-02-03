@@ -9,29 +9,6 @@
 
 (function()
 {
-
-function displayNavbar()
-{
-    //Set the nav bar to link to projects.html instead of products.html
-    let navbarProductsElement = document.getElementById("nav-products");
-    
-    
-    if (document.title === "Projects")
-    {
-        
-        navbarProductsElement.innerHTML=`<a class="nav-link active" aria-current="page" href="projects.html">
-        <i class="fas fa-box fa-lg"></i> Projects</a>`;
-    }
-    else
-    {
-        navbarProductsElement.innerHTML=`<a class="nav-link " aria-current="page" href="projects.html">
-        <i class="fas fa-box fa-lg"></i> Projects</a>`;
-    }
-    
-
-    
-}    
-
 function displayHome()
 {
     
@@ -43,11 +20,9 @@ function displayHome()
     indexTextElement = document.getElementById("home-title");
     indexTextElement.textContent= indexText;
 
-   
-    
- 
-    //navbarProductsElement.textContent="Projects";
-    
+    navbarProductsElement = document.getElementById("nav-products");
+    navbarProductsElement.textContent=`
+    <a class="nav-link" aria-current="page" href="projects.html"><i class="fas fa-box fa-lg"></i> Projects</a>`
 
 }
 function displayAbout()
@@ -191,14 +166,22 @@ function displayContact()
 
 
 }
+function NavbarInsert()
+{
+    let navbarHR = document.getElementById("humanResources");
+    let parentDiv = sp2.parentNode
+
+    // Insert the new element into before sp2
+    parentDiv.insertBefore(sp1, sp2)
+    navbarHR.innerHTML = `<a class="nav-link" aria-current="page" href="human-resources.html"><i class="fas fa-users"></i>Human Resources</a>`
+}
+
 
     function Start()
     {
         console.log("App Started...");
-        displayNavbar();
         switch(document.title)
         {
-           
             case "Home":
                 displayHome();
                 break;
@@ -214,8 +197,6 @@ function displayContact()
             case "Contact":
                 displayContact();
                 break;
-
-
 
         }
         
