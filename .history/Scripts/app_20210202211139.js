@@ -209,36 +209,33 @@ function displayContact()
     messageArea.hidden = true;
     //form validation
     let fullName = document.getElementById("fullName");
-        // fullName.addEventListener("blur", function() 
-        // {
-        //     if(fullName.value.length < 2)
-        //     {
-        //         fullName.focus();
-        //         fullName.select();
-        //         messageArea.hidden = false;
-        //         messageArea.textContent = "Please enter an appropriate Name";
-        //     }
-        //     else
-        //     {
-        //         messageArea.removeAttribute("class");
-        //         messageArea.hidden = true;
-        //     }
-        // });
+        fullName.addEventListener("blur", function() 
+        {
+            if(fullName.value.length < 2)
+            {
+                fullName.focus();
+                fullName.select();
+                messageArea.hidden = false;
+                messageArea.textContent = "Please enter an appropriate Name";
+            }
+            else
+            {
+                messageArea.removeAttribute("class");
+                messageArea.hidden = true;
+            }
+        });
         
 
     let sendButton = document.getElementById("sendButton");
     sendButton.addEventListener("click", function(event)
     {
-
-
-        window.location.href = "index.html";
         //event.preventDefault();
-        // let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
+        let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
         
-        // if(contact.serialize())
-        // {
-        //     localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-        // }
+        if(contact.serialize())
+        {
+            localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
+        }
 
     });
 

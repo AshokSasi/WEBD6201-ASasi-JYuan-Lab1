@@ -93,9 +93,9 @@ function displayAbout()
     projectsTextElement = document.getElementById("about-ashok");
     projectsTextElement.innerHTML= `<h3>Ashok Sasitharan</h3>
     <p>My name is Ashok Sasitharan, I am 19 years old and I have been programming for 4 years. I am experienced in web 
-    development using languages like HTML, PHP, CSS, and JavaScript as well as development of Windows Form, and Console Applications in C#, C++, Java.</p>
+    development as well as development of Windows Form, and Console Applications. </p>
     <a href="/documents/Ashok-Sasitharan-Resume.pdf" download>
-   <p class="resume-link">Here is a link to my Resume!</p>
+   <p>Here is a link to my Resume!</p>
     </a>
     <img src="./images/ashok-picture.jpg" alt="A picture of Ashok Sasitharan" width =450 height = 600>`;
 
@@ -108,9 +108,6 @@ function displayAbout()
     I now have experience with a number of languages such as Java and c# alongside with some experience working on web development, mainframe development
     and windows form applications.    
     </p>
-    <a href="/documents/Ashok-Sasitharan-Resume.pdf" download>
-    <p class="resume-link">Here is a link to my Resume!</p>
-     </a>
     <img src="./images/jacky-picture.jpg" alt="A picture of Jacky Yuan" width =500 height = 450>`;
 }
 function displayProjects()
@@ -209,36 +206,33 @@ function displayContact()
     messageArea.hidden = true;
     //form validation
     let fullName = document.getElementById("fullName");
-        // fullName.addEventListener("blur", function() 
-        // {
-        //     if(fullName.value.length < 2)
-        //     {
-        //         fullName.focus();
-        //         fullName.select();
-        //         messageArea.hidden = false;
-        //         messageArea.textContent = "Please enter an appropriate Name";
-        //     }
-        //     else
-        //     {
-        //         messageArea.removeAttribute("class");
-        //         messageArea.hidden = true;
-        //     }
-        // });
+        fullName.addEventListener("blur", function() 
+        {
+            if(fullName.value.length < 2)
+            {
+                fullName.focus();
+                fullName.select();
+                messageArea.hidden = false;
+                messageArea.textContent = "Please enter an appropriate Name";
+            }
+            else
+            {
+                messageArea.removeAttribute("class");
+                messageArea.hidden = true;
+            }
+        });
         
 
     let sendButton = document.getElementById("sendButton");
     sendButton.addEventListener("click", function(event)
     {
-
-
-        window.location.href = "index.html";
         //event.preventDefault();
-        // let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
+        let contact = new Contact(fullName.value, contactNumber.value, emailAddress.value);
         
-        // if(contact.serialize())
-        // {
-        //     localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
-        // }
+        if(contact.serialize())
+        {
+            localStorage.setItem((localStorage.length + 1).toString(), contact.serialize());
+        }
 
     });
 
